@@ -1,4 +1,5 @@
 body {
+  background-color: lightsteelblue;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -11,3 +12,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.title {
+  color: darkmagenta;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  background-color: black;
+  padding: 3%;
+  border: 2px solid darkmagenta;
+  text-shadow: 1px 1px gray;
+  font-size: 3rem;
+}
+
+.release {
+  color: black;
+}
+
+.song-list {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 0px;
+  border: 2px solid black;
+}
+
+h1 {
+  text-shadow: 1px 1px white;
+}
+
+h2 {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+h4 {
+  color: blue;
+  text-shadow: 1px 1px white;
+}
+
+
+
