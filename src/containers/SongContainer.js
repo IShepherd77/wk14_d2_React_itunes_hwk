@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SongList from "../components/SongList";
+import SongDetail from "../components/SongDetail";
 
 class SongContainer extends Component {
 
@@ -16,7 +17,7 @@ componentDidMount(){
 
     fetch(url)
         .then(res => res.json())
-        .then(data => this.setState({data: data}))
+        .then(data => this.setState({data: data.feed.entry}))
         .catch(err => console.error(err))
 }
 
@@ -24,6 +25,7 @@ render() {
     return (
       <div className='song-container'>
   <h1>testing song container here</h1>
+  <SongList data={this.state.data}/>
       </div>
       );
     }

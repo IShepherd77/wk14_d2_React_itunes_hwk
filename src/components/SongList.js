@@ -1,10 +1,10 @@
 import React from 'react';
-import Song from './Song';
+import SongDetail from './SongDetail';
 
 const SongList = ({data}) => {
-    const songNodes = data.map(song => {
+    const songNodes = data.map((song, index) => {
         return (
-            <Song>????????</Song>
+            <SongDetail song={song} key={song.id.attributes['im:id']} index={index}></SongDetail>
         );
     });
 
