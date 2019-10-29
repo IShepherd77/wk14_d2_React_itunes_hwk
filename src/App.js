@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import SongContainer from './containers/SongContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hiya</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+    <SongContainer/>
+    );
+  }
 }
 
 export default App;
